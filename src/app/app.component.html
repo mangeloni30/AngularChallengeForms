@@ -1,9 +1,10 @@
  
 <div class="container-fluid">
   <h2>AngularJS Forms Challenge</h2>
-  <form #userForm="ngForm">
+  <form #userForm="ngForm" (ngSubmit)="submitData()" novalidate>
     <!--{{userForm.value | json}}-->
     <!--{{userModel | json}}-->
+    <!--{{userForm.form.invalid}}-->
     <div class="form-group">
       <label>Name</label>
       <input 

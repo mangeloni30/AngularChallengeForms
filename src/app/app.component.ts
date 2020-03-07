@@ -9,4 +9,7 @@ import { User } from './user';
 export class AppComponent {
   title = 'newChallengeForm';
   userModel = new User('', '', null, '', '', '');
+  submitData(){
+    // console.log('SUBMITTTT');
+  }
 }
